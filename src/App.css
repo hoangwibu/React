@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+/* blogList.css */
+
+/* Kiểu cho thẻ h1 */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Kiểu cho thẻ ul */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Kiểu cho các mục trong danh sách */
+li {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Kiểu cho ảnh (avatar) */
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Kiểu cho tiêu đề bài viết */
+h2 {
+  color: #007bff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Kiểu cho thông tin bài viết */
+p {
+  margin: 0;
+}
+
+/* Kiểu cho ngày đăng */
+p.date {
+  color: #888;
+}
+
