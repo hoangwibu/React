@@ -11,3 +11,78 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.work-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex; /* Dòng này thêm mới */
+  justify-content: space-between; /* Dòng này thêm mới */
+  align-items: center; /* Dòng này thêm mới */
+  transition: box-shadow 0.3s;
+}
+
+.work-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-item h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.work-item p {
+  margin: 10px 0;
+  color: #555;
+}
+.task-checkbox {
+  margin-right: 10px;
+  width: 30px; /* Độ rộng của checkbox */
+  height: 30px; /* Chiều cao của checkbox */
+  border: 2px solid #555; /* Viền checkbox */
+  border-radius: 4px; /* Bo tròn các góc của checkbox */
+  cursor: pointer;
+}
+.task-actions {
+  display: flex;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}

@@ -24,11 +24,42 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Worklist</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="demo">
+      <header>
+        <h1>Works List</h1>
+    </header>
+    <main>
+        <section class="work-list">
+            <div class="work-item">
+                <input type="checkbox" class="task-checkbox">
+                <div class="task-info">
+                    
+                    <h2>Work Item 1</h2>
+                    <p>Description of Work Item 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="task-actions">
+                    <button class="delete-button">Delete</button>
+                </div>
+            </div>
+            <div class="work-item">
+                <input type="checkbox" class="task-checkbox">
+                <div class="task task-info">
+                    
+                    <h2>Work Item 2</h2>
+                    <p>Description of Work Item 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="task task-actions">
+                    <button class="delete-button">Delete</button>
+                </div>
+            </div>
+            <!-- Add more work items here -->
+        </section>
+    </main>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
