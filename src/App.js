@@ -5,11 +5,14 @@ import ThemeChange from './components/ThemeChange';
 
 function App() {
   return (
-    <ThemeContextProvider>
-      <div className="App">
-        <ThemeChange></ThemeChange>
-      </div>
-    </ThemeContextProvider>
+    <div className="ul container">
+      <LanguageStore>
+        <LanguageSelector />
+          <ColorContext.Provider value="red">
+            <UserCreate />
+          </ColorContext.Provider>
+      </LanguageStore>
+    </div>
   );
 }
 export default App;
